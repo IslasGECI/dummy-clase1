@@ -1,9 +1,10 @@
 dist: xenial
-language: python
-python:
-  - "3.7"
+addons:
+  apt:
+    packages:
+      - pyhon3
+      - r-base
 install:
-  - make requirements
   - make install
 script:
   - make tests
