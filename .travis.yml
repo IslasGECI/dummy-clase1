@@ -1,0 +1,10 @@
+dist: xenial
+addons:
+  apt:
+    packages:
+      - python3
+      - r-base
+install:
+  - make install
+script:
+  - make tests
