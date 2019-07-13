@@ -1,0 +1,6 @@
+dist: xenial
+install:
+  - make requirements
+  - make install
+script:
+  - . tests/test_transformation.sh
