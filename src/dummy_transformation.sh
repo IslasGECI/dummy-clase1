@@ -6,5 +6,5 @@ echo "Argumento: $X"
 echo "Escalamiento: $M"
 echo "Traslación: $B"
 # Y=$(( $M*$X+$B ))
-Y=$(scripts/add_offset.py $B $(scripts/scale_factor.R $M $X))
+Y=$(src/add_offset.py $B $(src/scale_factor.R $M $X))
 echo "Resultado: $Y"
