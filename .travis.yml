@@ -1,6 +1,9 @@
 dist: xenial
+language: python
+python:
+  - "3.7"
 install:
   - make requirements
   - make install
 script:
-  - . tests/test_transformation.sh
+  - make tests
