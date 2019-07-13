@@ -1,6 +1,6 @@
 value_obtained=$(dummy_transformation.sh 2 3 4)
 value_expected=10
-if [ "${value_expected}" = "${value_expected}" ]; then
+if [ "${value_expected}" == "${value_expected}" ]; then
   echo "OK"
   exit 0
 else
