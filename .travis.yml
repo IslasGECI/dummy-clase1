@@ -1,11 +1,9 @@
-dist: xenial
+dist: bionic
 language: bash
-addons:
-  apt:
-    packages:
-      - python3
-      - r-base
-install:
-  - make install
+services:
+  - docker
 script:
-  - make tests
+  - |
+    docker run --volume ${PWD}:/workdir islasgeci/jupyter:3691 bash -c "
+      make install &&
+      make tests"
